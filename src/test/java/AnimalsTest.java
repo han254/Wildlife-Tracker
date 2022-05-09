@@ -19,10 +19,10 @@ class AnimalsTest {
         Animals testAnimal = new Animals(4,"Cheetah", "adult", "okay");
         assertEquals(4, testAnimal.getId());
     }
-    @Test
-    public void save_insertsObjectIntoDatabase_Animal() {
-        Animals testAnimal = new Animals(4,"Cheetah","adult","okay");
-        testAnimal.save();
-        assertTrue(Animals.all().get(0).equals(testAnimal));
-    }
+//    @Test
+//    public void save_insertsObjectIntoDatabase_Animal() {
+//        Animals testAnimal = new Animals(4,"Cheetah","adult","okay");
+//        testAnimal.save();
+//        assertTrue(Animals.all().get(0).equals(testAnimal));
+//    }
 }
