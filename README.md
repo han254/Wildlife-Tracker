@@ -15,15 +15,15 @@ A java A java-Spark application that allows Rangers to track wildlife sightings 
 
 Run these commands
 
-3. CREATE DATABASE Wildlife-Tracker;
+3. CREATE DATABASE Wildlife_Tracker;
 
-4. \c Wildlife-Tracker;
+4. \c Wildlife_Tracker;
 
-5. CREATE TABLE animals (id serial PRIMARY KEY, name varchar, health varchar, age varchar, type varchar);
+5. CREATE TABLE animals (id serial PRIMARY KEY, name varchar, health varchar, age varchar);
 
-6. CREATE TABLE Wildlife-Tracker=# CREATE TABLE sightings (id serial PRIMARY KEY, animal_id int, location varchar, ranger_name varchar);
+6. CREATE TABLE Wildlife_Tracker=# CREATE TABLE sightings (id serial PRIMARY KEY, animal_id int, location varchar, ranger_name varchar);
 
-7. CREATE DATABASE Wildlife-Tracker_test WITH TEMPLATE Wildlife-Tracker;
+7. CREATE DATABASE Wildlife_Tracker_test WITH TEMPLATE Wildlife_Tracker;
 
 
 
