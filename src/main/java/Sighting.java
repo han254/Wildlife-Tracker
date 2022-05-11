@@ -47,8 +47,6 @@ public class Sighting {
     public int getId() {
         return id;
     }
-
-
     public static List<Sighting> all() {
 
         try(Connection con = DB.sql2o.open()) {
@@ -82,7 +80,6 @@ public class Sighting {
             return null;
         }
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

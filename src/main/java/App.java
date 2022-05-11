@@ -42,15 +42,6 @@ public class App {
             String name=request.queryParams("name");
             EndangeredAnimal endangeredAnimal= new EndangeredAnimal(type,health,age,name);
             endangeredAnimal.save();
-//            if(type.equals(EndangeredAnimal.kind)){
-//                EndangeredAnimal endangered=new EndangeredAnimal(name,health,age,EndangeredAnimal.kind);
-//                endangered.save();
-//            }
-//            else  {
-//                int id = 0;
-//                Animals animal=new Animals(id,name,health,age,Animals.kind);
-//                animal.save();
-//            }
 
             return new ModelAndView(model,"animal-success.hbs");
         },new HandlebarsTemplateEngine());
