@@ -1,0 +1,9 @@
+{{#partial "content"}}
+    {{#if animals}}
+        {{#each animals}}
+          The Animal is:  {{name}}
+                  {{health}} <br>
+        {{/each}}
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}
