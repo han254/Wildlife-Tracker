@@ -7,10 +7,10 @@
     <list default="true" id="bce9c84e-8224-4056-92bb-6597c307cc09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sighting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/CSS/animals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/CSS/animals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/animal-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/animal-form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/animals.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/animals.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sighting-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sighting-form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sighting.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sighting.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/sighting-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/sighting-form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/sighting.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/sighting.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,28 +99,15 @@
       <command value="gradle :clean" />
       <command value="gradle run" />
       <command value="gradle build" />
+      <command value="mvn clean deploy" />
       <command value="mvn compile" />
       <command value="mvn deploy" />
-      <command value="mvn clean deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.Wildlife_tracker [dependencies]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Wildlife_tracker.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="Wildlife_tracker.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,13 +181,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Wildlife_tracker [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Wildlife_tracker [dependencies]" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.AnimalsTest.getAll_animalInstantiatesWithList_String" />
         <item itemvalue="Gradle.AnimalsTest" />
         <item itemvalue="Gradle.AnimalsTest.animal_instantiatesCorrectly_true" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

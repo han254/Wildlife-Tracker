@@ -1,0 +1,23 @@
+{{#partial "content"}}
+    {{#if animals}}
+        {{#each animals}}
+            <table class="table table-sm table-light">
+                <thead>
+                <tr>
+                    <th scope="col">Animal name</th>
+                    <th scope="col">Type </th>
+                    <th scope="col">Health</th>
+                    <th scope="col">Age</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>{{name}}</th>
+                    <td>{{type}}</td>
+                    <td>{{health}}</td>
+                    <td>{{age}}</td>
+                </tr>
+            </table>
+        {{/each}}
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}
