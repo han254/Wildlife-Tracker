@@ -17,13 +17,13 @@ Run these commands
 
 3. CREATE DATABASE Wildlife_Tracker;
 
-4. \c Wildlife_Tracker;
+4. \c wildlife_tracker;
 
 5. CREATE TABLE animals (id serial PRIMARY KEY, name varchar, health varchar, age varchar);
 
 6. CREATE TABLE Wildlife_Tracker=# CREATE TABLE sightings (id serial PRIMARY KEY, animal_id int, location varchar, ranger_name varchar);
 
-7. CREATE DATABASE Wildlife_Tracker_test WITH TEMPLATE Wildlife_Tracker;
+7. CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 
 
 
