@@ -27,25 +27,31 @@ public class App {
             return new ModelAndView(model, "endangered-form.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/animals",(request, response) ->{
+            Map<String, Object> model = new HashMap<>();
+            List<Animals> animals =Animals.all();
+            model.put("animals", animals);
+            return new ModelAndView(model,"animals.hbs" );
+            }, new HandlebarsTemplateEngine());
+
         post("/animals",(request, response) -> {
             Map<String,Object> model=new HashMap<String, Object>();
             String type=request.queryParams("type");
-            System.out.println(type);
             String health=request.queryParams("health");
-            System.out.println(health);
             String age=request.queryParams("age");
-            System.out.println(age);
             String name=request.queryParams("name");
-            System.out.println(name);
-            if(type.equals(EndangeredAnimal.kind)){
-                EndangeredAnimal endangered=new EndangeredAnimal(name,health,age,EndangeredAnimal.kind);
-                endangered.save();
-            }
-            else  {
-                int id = 0;
-                Animals animal=new Animals(id,name,health,age,Animals.kind);
-                animal.save();
-            }
+            EndangeredAnimal endangeredAnimal= new EndangeredAnimal(type,health,age,name);
+            endangeredAnimal.save();
+//            if(type.equals(EndangeredAnimal.kind)){
+//                EndangeredAnimal endangered=new EndangeredAnimal(name,health,age,EndangeredAnimal.kind);
+//                endangered.save();
+//            }
+//            else  {
+//                int id = 0;
+//                Animals animal=new Animals(id,name,health,age,Animals.kind);
+//                animal.save();
+//            }
+
             return new ModelAndView(model,"animal-success.hbs");
         },new HandlebarsTemplateEngine());
     }

@@ -19,7 +19,7 @@ Run these commands
 
 4. \c wildlife_tracker;
 
-5. CREATE TABLE animals (id serial PRIMARY KEY, name varchar, health varchar, age varchar);
+5. CREATE TABLE animals (id serial PRIMARY KEY, name varchar, health varchar, age varchar, type varchar);
 
 6. CREATE TABLE Wildlife_Tracker=# CREATE TABLE sightings (id serial PRIMARY KEY, animal_id int, location varchar, ranger_name varchar);
 

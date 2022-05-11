@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.*;
 import org.sql2o.*;
 
+import java.util.List;
+
 class AnimalsTest {
     @Test
     public void animal_instantiatesCorrectly_true() {
@@ -22,6 +24,13 @@ class AnimalsTest {
     @Test
     public void getType_animalInstantiatesWithId_String() {
         Animals testAnimal = new Animals(4,"Cheetah", "Non-Endangered","young", "healthy");
-        assertEquals("adult", testAnimal.getAge());
+        assertEquals("young", testAnimal.getAge());
+    }
+    @Test
+    public void getAll_animalInstantiatesWithList_String(){
+    Animals animals =new Animals(5,"zebra","Endagered","adult", "okay");
+    animals.save();
+        List<Animals> animalsList= Animals.all();
+        assertEquals(16, animalsList.size());
     }
 }

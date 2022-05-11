@@ -1,0 +1,63 @@
+{{#partial "styles"}}
+
+    <link rel='stylesheet' href='/CSS/style.css'>
+
+{{/partial}}
+
+{{#partial "content"}}
+    <div class=" container">
+        <div class="card">
+            <div class="card-body">
+                <h1 style="color:black;">Add Animal</h1>
+                <form action="/animals" method="post">
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <div class="form-check ">
+                                <input style="color:black;" class="form-check-input" type="checkbox" name="type"  value="Not endangered" onClick="window.location = '/animals/new';" >
+                                <label class="form-check-label" for="defaultCheck1">Not endangered</label>
+                            </div>
+                            <div class="form-check">
+                                <input style="color:black;" class="form-check-input" type="checkbox" name="type" value="Endangered" onClick="window.location = '/animals/new/endangered';" checked>
+                                <label class="form-check-label" for="defaultCheck1">Endangered</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="color:black;">Name of animal </label>
+                            <input type="text" class="form-control "  id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="health">Health status</label>
+                            <select class="form-control" id="health" name="health">
+                                <option value="Healthy">Healthy</option>
+                                <option value="Okay">Okay</option>
+                                <option value="Ill">Ill</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <select class="form-control" id="age" name="age">
+                                <option value="Newborn">Newborn</option>
+                                <option value="Young">Young</option>
+                                <option value="Adult">Adult</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">Type</label><br>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" name="type" onClick="window.location = '/animals/new';" checked>
+                                <label class="form-check-label" for="defaultCheck2">Not endangered</label>
+                            </div>
+                        </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success "> Add </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+{{/partial}}
+{{> layout.hbs}}
