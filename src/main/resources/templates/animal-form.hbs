@@ -1,11 +1,12 @@
 {{#partial "styles"}}
 
-    <link rel='stylesheet' href='/CSS/style.css'>
+    <link rel='stylesheet' href='/CSS/animals.css'>
 
 {{/partial}}
 
 {{#partial "content"}}
-    <div class=" container">
+    <div class=" container" >
+">
         <div class="card">
             <div class="card-body">
                 <h1 style="color:black;">Add Animal</h1>
@@ -13,11 +14,11 @@
                         <div class="form-group">
                             <label for="type">Type</label>
                             <div class="form-check ">
-                                <input style="color:black;" class="form-check-input" type="checkbox" name="type"  value="Not endangered" onClick="window.location = '/animals/new';" >
-                                <label class="form-check-label" for="defaultCheck1">Not endangered</label>
+                                <input style="color:black;" class="form-check-input" type="checkbox" name="type"  value="Non-endangered" >
+                                <label class="form-check-label" for="defaultCheck1">Non-endangered</label>
                             </div>
                             <div class="form-check">
-                                <input style="color:black;" class="form-check-input" type="checkbox" name="type" value="Endangered" onClick="window.location = '/animals/new/endangered';" checked>
+                                <input style="color:black;" class="form-check-input" type="checkbox" name="type" value="Endangered" >
                                 <label class="form-check-label" for="defaultCheck1">Endangered</label>
                             </div>
                         </div>
@@ -30,7 +31,7 @@
                             <select class="form-control" id="health" name="health">
                                 <option value="Healthy">Healthy</option>
                                 <option value="Okay">Okay</option>
-                                <option value="Ill">Ill</option>
+                                <option value="Ill">ILL</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -40,14 +41,6 @@
                                 <option value="Young">Young</option>
                                 <option value="Adult">Adult</option>
                             </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="type">Type</label><br>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" name="type" onClick="window.location = '/animals/new';" checked>
-                                <label class="form-check-label" for="defaultCheck2">Not endangered</label>
-                            </div>
                         </div>
                     <br>
                     <div class="form-group">
