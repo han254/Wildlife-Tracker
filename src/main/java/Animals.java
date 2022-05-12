@@ -11,7 +11,7 @@ public class Animals implements DatabaseManagement {
     public  String health;
     public  String age;
     public String type;
-    public static String species="Not endangered";
+    public static String species="NonEndangered";
 
 
     public static final String WELLNESS="healthy";
@@ -72,6 +72,9 @@ public class Animals implements DatabaseManagement {
                     .addParameter("type", this.type)
                     .executeUpdate()
                     .getKey();
+        }
+        catch {
+            system.out.printIn("No Data!");
         }
     }
 
