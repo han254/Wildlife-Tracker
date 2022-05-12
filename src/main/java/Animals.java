@@ -18,7 +18,7 @@ public class Animals implements DatabaseManagement {
     public static final String SICK="ill";
     public static final String FINE="okay";
 
-    //AGE CONSTANTS
+  
     public static final String INFANT="newborn";
     public static final String YOUNG="young";
     public static final String ADULT="adult";
